@@ -1,0 +1,328 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Venomous Snake Detection</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+      crossorigin="anonymous"
+    />
+    <style>
+      h5 {
+        font-weight: normal;
+      }
+    </style>
+  </head>
+  <body
+    data-bs-spy="scroll"
+    data-bs-target="#navbarNavAltMarkup"
+    style="background-color: #b5bdad"
+  >
+    <nav class="navbar fixed-top bg-body-tertiary" data-bs-theme="dark">
+      <nav class="navbar navbar-expand-lg">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">Snako</a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarNavAltMarkup"
+            aria-controls="navbarNavAltMarkup"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+            <div class="navbar-nav">
+              <a class="nav-link active" aria-current="page" href="#">Home</a>
+              <a class="nav-link" href="#Detection">Detection</a>
+              <a class="nav-link" href="#Anti-venom">Anti-venom</a>
+              <a class="nav-link" href="#firstaid">First Aid</a>
+              <a class="nav-link" href="#about">
+                <div class="txt">About</div>
+              </a>
+              <!-- <a class="nav-link disabled" aria-disabled="true">Blog</a> -->
+            </div>
+          </div>
+        </div>
+      </nav>
+    </nav>
+    <br /><br /><br />
+    <div class="d-flex p-2 justify-content-center">
+      <h1>Snakes of India</h1>
+    </div>
+    <div class="d-flex p-2 justify-content-center">
+      <h5>
+        The planet is home to almost 3,400 living species of these carnivorous
+        reptiles. Snakes have established populations in fossorial, arboreal,
+        terrestrial, and aquatic environments across all continents except
+        Antarctica. Bestowed with exceptional biological diversity, snakes are
+        no exception in India. Nearly 300 snake species inhabit the varying
+        habitats across the country, of which more than 60 are venomous, 40+
+        mildly venomous, and about 180 non-venomous. The species fall under four
+        families - Colubridae, Elapidae, Hydrophiidae, and Viperidae.
+        <br /><br />
+        <div class="text-center">
+          <img
+            src="{{ url_for('image1') }}"
+            class="rounded"
+            alt="..."
+            width="360rem"
+          />
+        </div>
+        <br />
+        <b>Colubridae</b> – Evolved about 35 to 55 million years ago, this is
+        the largest and most diverse family of snakes. Consisting of rear-fanged
+        snakes, most of them are non-venomous in nature. The family comprises
+        snakes such as keelbacks, rats snakes, wolf snakes, and trinket snakes.
+        What sets them apart from other snakes is the presence of Duvernoy’s
+        glands on either side of the head behind the eyes – which are homologous
+        to the venom gland. <br /><br /><b>Elapidae</b> – Fairly newer in terms
+        of the evolution, these snakes have the unique characteristic of
+        possessing two upring, fixed front fangs. Generally veonomous, one can
+        easily recognise them by their threat display of spreading neck flaps.
+        Distributed throughout India, mostly kraits and cobras fall under this
+        family. <br /><br />
+        <b>Hydrophiidae</b> – Snakes in this family have adapted to a marine way
+        of life and have evolved the ability to swim effectively and excrete
+        salt. Majority of them are highly venomous with relatively short fangs.
+        This family consists of species of coral snakes and sea snakes.
+        <br /><br />
+        <b>Viperidae</b> – Snake species in this family possess long, hollow,
+        rectractable fangs which allow easy injection of venom in the prey. Most
+        of them have keeled scales and slit-shaped, elliptical pupils. The
+        family comprises vipers, which are widespread on the Indian mainland.
+      </h5>
+    </div>
+    <div class="d-flex p-2 justify-content-center">
+      <h1>The Big Four</h1>
+    </div>
+    <div class="d-flex p-2 justify-content-center">
+      <h5>
+        Based on dentition or placement of teeth in the jaw, snakes fall into
+        four categories, namely – Aglyph, Opisthoglyph, Proteroglyph, and
+        Solenoglyph. Aglyphous snakes lack any specialised teeth and are
+        generally non-venomous, with a few exceptions. Opisthoglyphous snakes
+        possess fangs at the rear end of maxillae and are thus known as
+        rear-fanged. Falling under the family Colubridae, most of these snakes
+        are venomous. Unique to elapids, proteroglyphous snakes have fangs in
+        the front, resembling hollow needles. Lastly, solenoglyphous snakes
+        possess the most advanced venom delivery mechanism, generally found
+        amongst vipers. One can generally correlate dentition in snakes with
+        their venom-producing nature and evolutionary lineage.
+      </h5>
+    </div>
+    <div class="text-center">
+      <img
+        src="{{ url_for('image2') }}"
+        class="rounded"
+        alt="..."
+        width="400rem"
+        height="480"
+      />
+      <h6>A guide to some commonly misinterpreted snakes of India</h6>
+    </div>
+    <div class="d-flex p-2 justify-content-center">
+      <h5>
+        Each of the 60+ venomous Indian snake species has its own signature
+        cocktail of toxins running through its fangs. Of the terrestrial
+        venomous snakes, four species are widespread on the Indian mainland –
+        also known as the “big four.” They include spectacled cobra (Naja naja),
+        common krait (Bungarus caeruleus), Russell’s viper (Daboia russelii),
+        and saw-scaled viper (Echis carinatus). These paramount species are
+        responsible for the majority of the mortality and injury cases in the
+        country.
+      </h5>
+    </div>
+    <section id="Detection" class="section">
+      <br />
+      <div
+        class="border border-success"
+        style="background-color: #b5bdad"
+        id="Detection"
+      >
+        <br /><br />
+        <div class="container text-center">
+          <div class="row">
+            <div class="col col-lg-6">
+              <h1>Snake Detection</h1>
+
+              <form
+                action="/predict"
+                method="post"
+                enctype="multipart/form-data"
+              >
+                <label for="file">Choose a JPEG or PNG file:</label>
+                <input class="btn btn-dark" type="file" name="file" accept=".jpg, .jpeg, .png" />
+                <!-- <small id="fileHelp" class="form-text text-muted"
+              >Only JPEG and PNG files are allowed.</small
+            > -->
+                <input class="btn btn-dark" type="submit" value="Predict" />
+              </form>
+
+              {% if final_class %}
+              <h2>Result:</h2>
+              <p>Final Class: {{ final_class }}</p>
+              <p>Eyes Percentage: {{ eyes_percentage * 100 }}%</p>
+              <p>Head Percentage: {{ head_percentage * 100 }}%</p>
+              <p>Tongue Percentage: {{ tongue_percentage * 100 }}%</p>
+              <p>Pit Percentage: {{ pit_percentage * 100 }}%</p>
+              <p>Fang Percentage: {{ fang_percentage * 100 }}%</p>
+              {% endif %} {% if uploaded_image %}
+            </div>
+            <div class="col">
+              <h2>Uploaded Image:</h2>
+              <img src="{{ url_for('display_image') }}" width="300rem" />
+            </div>
+            {% endif %}
+          </div>
+        </div>
+        <br /><br />
+      </div>
+    </section>
+    <section id="Anti-venom" class="section">
+      <br /><br /><br />
+      <div class="d-flex p-2 justify-content-center">
+        <h1>Snake Bites & Anti-venom</h1>
+      </div>
+      <div class="d-flex p-2 justify-content-center">
+        <h5>
+          Being the country with the second-largest population, without a doubt,
+          the human population has established itself into each and every niche
+          – including those inhabited by wildlife. Various human habitations
+          overlap with areas laden with large snake populations. Owing to the
+          overlap, their interaction is inevitable and the biggest cause of
+          human-wildlife conflict. Snakebite in India causes the highest annual
+          death rates (58,000) and disabilities (four times the death rate) than
+          any other nation. In the past 20 years, nearly 1.2 million people have
+          lost their lives as a result of snakebites. Considering the problem of
+          snakebites in numerous countries across the globe, WHO designated it
+          an NTD, or a Neglected Tropical Disease.
+        </h5>
+      </div>
+      <div class="text-center">
+        <img
+          src="{{ url_for('image3') }}"
+          class="rounded"
+          alt="..."
+          width="400rem"
+          height="280rem"
+        />
+        <h6>
+          Russell’s Viper, one of India’s “big four” is a venomous snake [Photo
+          (c) Wildlife SOS]
+        </h6>
+      </div>
+      <div class="d-flex p-2 justify-content-center">
+        <h5>
+          In the past decade, the significant use of snake venom has come to
+          light as it is used to produce antivenom and treat various diseases.
+          Unfortunately, despite the dire need, the lack of antivenoms is
+          widespread throughout. Due to their popularity, commercially available
+          antivenom is available only for the aforementioned species. Routinely,
+          the “big four” antivenom is used for any and all snakebite-related
+          treatments. The antivenoms beyond the big four are ineffective with
+          very little success. Snake bites may cause internal bleeding or
+          multiple organ failure including heart, respiratory system, and
+          kidneys. Additionally, it may even lead to paralysis or death of the
+          person. In case of a snake bite, the only recommended and acceptable
+          treatment is the timely administration of adequate dosage of
+          antivenom. The Polyvalent Antivenom Serum, available in government
+          centres across India, neutralizes the injected venom of especially the
+          “big four” snake species. Please note that sucking out venom from a
+          snakebite only hastens the venom’s passage into one’s bloodstream.
+        </h5>
+      </div>
+    </section>
+    <section id="firstaid" class="section">
+      <br /><br /><br />
+      <div class="d-flex p-2 justify-content-center">
+        <h1>What must you do in case of an encounter?</h1>
+      </div>
+      <div class="d-flex p-2 justify-content-center">
+        <h5>
+          Due to rampant encroachment of natural habitats, fragmentation, and
+          deforestation, reptiles from the wild are compelled to move to urban
+          areas. Encounters with wild, potentially venomous snakes are common in
+          metropolitan cities like Delhi, Mumbai, Ahmedabad, and Hyderabad.
+          Hence, awareness and preparedness are the two utmost steps one can
+          take to avoid such morbid situations. One must learn about the
+          avoidance behaviour of the species, especially those inhabiting the
+          rural and agricultural lands. We must also promote awareness about the
+          local species and relevant facts about them.
+        </h5>
+      </div>
+      <div class="text-center">
+        <img
+          src="{{ url_for('image4') }}"
+          class="rounded"
+          alt="..."
+          width="400rem"
+          height="280rem"
+        />
+        <h6>
+          Some venomous and non-venomous snakes of India and do’s and don’ts of
+          snakebite [Graphic (c) Wildlife SOS]
+        </h6>
+      </div>
+      <div class="d-flex p-2 justify-content-center">
+        <h5>
+          In case you encounter a snake, maintain a safe distance. Remember that
+          the reptile will not bother if left alone and it shall only charge if
+          provoked or threatened. Moreover, handling the poor snake will only
+          lead to unfortunate consequences as it takes immense practice and
+          patience. We advise one to reach out to the nearest rescue
+          organisations. Wildlife SOS rescue hotlines operate out of Delhi-NCR
+          (+91-9871963535), Mathura and Agra (+91-9917109666), Vadodara
+          (+91-9825011117), and J&K (+ 91-7006692300). Our 24×7 Rapid Response
+          Unit successfully rescues thousands of reptiles each year. If spotted
+          in areas where Wildlife SOS does not have active rescue helplines,
+          please contact the local Forest Department at the earliest.
+        </h5>
+      </div>
+    </section>
+    <section id="about" class="section">
+      <br /><br /><br />
+      <div class="d-flex p-2 justify-content-center">
+        <h1>About Us</h1>
+      </div>
+      <div class="d-flex p-2 justify-content-center">
+        <h5>
+          Welcome to Snako, your reliable source for venomous snake detection
+          and awareness. Our mission is to provide a platform that enhances
+          snake safety through advanced detection technologies and educational
+          resources. At Snako, we understand the importance of coexisting with
+          these fascinating yet potentially dangerous reptiles. Our team is
+          dedicated to developing cutting-edge snake detection solutions to
+          mitigate risks and foster a harmonious environment between humans and
+          snakes.
+          <br /><br />
+          <b>Join Us in the Journey:</b>
+          Whether you are an enthusiast, a researcher, or someone seeking
+          knowledge, we invite you to join us in our mission. Explore our
+          website, engage with our resources, and contribute to building a safer
+          environment for all. Thank you for being a part of the Snako
+          community!
+        </h5>
+      </div>
+    </section>
+    <footer class="text-center mt-5">
+      <p>&copy; 2024 Snako. All rights reserved.</p>
+    </footer>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+      crossorigin="anonymous"
+    ></script>
+    <script>
+      // Get the section element by its ID
+      var sectionToScrollTo = document.getElementById("Detection");
+      sectionToScrollTo.scrollIntoView({ behavior: "instant" });
+    </script>
+  </body>
+</html>
